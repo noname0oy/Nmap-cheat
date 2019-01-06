@@ -1,0 +1,5 @@
+Use Zenmap V 7.70
+nmap -Pn --script vuln <target ip>
+nmap -sV --script vulscan/vulscan.nse <target ip> ## https://github.com/scipag/vulscan.git
+nmap -Pn --script exploit <target ip>
+nmap -p 80 --script http-methods --script-args http-method.test-all <target ip>
